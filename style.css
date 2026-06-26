@@ -1,0 +1,33 @@
+.container{
+	max-width:1100px;
+	margin:0 auto;
+	padding:0 16px;
+}
+*{box-sizing:border-box}
+body{font-family:Arial, Helvetica, sans-serif;line-height:1.4;color:#222;margin:0;background:#f6f7fb}
+.site-header{background:#0b3b6b;color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px}
+.logo{margin:0;font-size:1.2rem}
+.nav{list-style:none;margin:0;padding:0;display:flex;gap:12px}
+.nav a{color:#fff;text-decoration:none}
+.hero{background:#eef5fb;padding:40px 0;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:16px}
+.producto{background:#fff;border:1px solid #dde6f0;padding:12px;border-radius:6px}
+.producto h4{margin:0 0 8px 0}
+.precio{color:#0b3b6b;font-weight:600}
+.add-to-cart{margin-top:8px;padding:8px 10px;border:none;background:#0b3b6b;color:#fff;border-radius:4px;cursor:pointer}
+.cart{position:fixed;right:16px;top:80px;width:260px;background:#fff;border:1px solid #ddd;padding:12px;border-radius:6px}
+.cart-items{list-style:none;padding:0;margin:0 0 8px 0;max-height:200px;overflow:auto}
+.cart .empty{color:#666}
+#checkout{width:100%;padding:8px;background:#198754;color:#fff;border:none;border-radius:4px;cursor:pointer}
+.servicios,.contacto{padding:24px 0}
+.site-footer{background:#0b3b6b;color:#fff;padding:12px;margin-top:24px;text-align:center}
+
+@media (max-width:600px){
+	 .header-inner{flex-direction:column;gap:8px;align-items:flex-start}
+	.cart{position:static;width:auto;margin:16px}
+}
+
+
+/* pequeñas mejoras de accesibilidad */
+button:focus, a:focus{outline:3px solid #cfe8ff;outline-offset:2px}
