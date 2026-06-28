@@ -1,10 +1,19 @@
 /* ==========================================================================
    1. ESTILOS GLOBALES Y RESET
    ========================================================================== */
-* {
+ *{
     box-sizing: border-box;
 }
+.segundo{
+  position :relative;
 
+}
+.segundo .regresar{
+  position: absolute;
+    top: 5%;
+    left: 90%;
+
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -176,4 +185,22 @@ button:focus,
 a:focus {
     outline: 3px solid #cfe8ff;
     outline-offset: 2px;
+}
+
+/* ==========================================================================
+   4. ACCESIBILIDAD Y FONDOS
+   ========================================================================== */
+button:focus, 
+a:focus {
+    outline: 3px solid #cfe8ff;
+    outline-offset: 2px;
+}
+
+/* El fondo va ÚNICAMENTE en el body */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('https://i.pinimg.com/736x/99/77/6c/99776c9b86d5b229b9cd99b4b3a7f8c4.jpg');
+    background-size: cover;       
+    background-position: center;  
+    background-attachment: fixed; 
 }
